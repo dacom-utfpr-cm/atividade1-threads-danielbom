@@ -1,4 +1,4 @@
-package ex2;
+package activity2;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package ex2;
+package activity2;
 
 /**
  * 4. Faça uma Thread que monitora um conjunto de threads e exiba quais threads

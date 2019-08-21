@@ -1,4 +1,4 @@
-package ex2;
+package activity2;
 
 /**
  * 3. Faça um programa Java que envia interrupções para as threads dos

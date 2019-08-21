@@ -1,4 +1,4 @@
-package ex2;
+package activity2;
 
 /**
  * Faça uma thread Java que fica aguardando uma sequência numérica de tamanho

@@ -1,4 +1,4 @@
-package ex2;
+package activity2;
 
 /**
  * 2. Faça uma thread Java que realize a leitura de um arquivo texto com frases
