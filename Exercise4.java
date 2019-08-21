@@ -6,23 +6,19 @@ package ex2;
  */
 public class Exercise4 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		InterruptionMonitor monitor = new InterruptionMonitor();
 		Thread readerLines = new Thread(new ReaderLines("/home/daniel/phrases.txt"));
 		Thread sleeper = new Thread(new Sleeper());
 
-		monitor.add(readerLines);
-		monitor.add(sleeper);
+		monitor.put(readerLines, sleeper);
 		new Thread(monitor).start();
 
 		readerLines.start();
 		sleeper.start();
 
 		sleeper.interrupt();
-		try {
-			Thread.sleep(11000);
-		} catch (InterruptedException e) {
-		}
+		Thread.sleep(11000);
 		readerLines.interrupt();
 	}
 
