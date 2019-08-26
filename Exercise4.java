@@ -8,7 +8,7 @@ public class Exercise4 {
 
 	public static void main(String[] args) throws InterruptedException {
 		InterruptionMonitor monitor = new InterruptionMonitor();
-		Thread readerLines = new Thread(new ReaderLines("/home/daniel/phrases.txt"));
+		Thread readerLines = new Thread(new ReaderLines("./resources/quotes.txt"));
 		Thread sleeper = new Thread(new Sleeper());
 
 		monitor.put(readerLines, sleeper);
@@ -18,7 +18,7 @@ public class Exercise4 {
 		sleeper.start();
 
 		sleeper.interrupt();
-		Thread.sleep(11000);
+		Thread.sleep(31000);
 		readerLines.interrupt();
 	}
 

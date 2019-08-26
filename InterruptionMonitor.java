@@ -25,7 +25,7 @@ public class InterruptionMonitor implements Runnable {
 	@Override
 	public void run() {
 		while (!this.threads.isEmpty()) {
-			this.threads.forEach(thread -> this.alert(thread));
+			this.threads.forEach(this::alert);
 			this.threads.removeIf(thread -> !thread.isAlive());
 		}
 	}
