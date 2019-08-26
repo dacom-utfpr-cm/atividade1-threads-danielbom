@@ -5,6 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Classe que lê uma linha de um arquivo, a cada 10 segundos.
+ * 
+ * @author daniel
+ *
+ */
 public class ReaderLines implements Runnable {
 
 	private String filepath;
@@ -28,9 +34,9 @@ public class ReaderLines implements Runnable {
 					break;
 			}
 		} catch (InterruptedException ie) {
-			System.out.println("Interrupted Exception ocurred.");
+			System.out.println("Ocorreu uma exceção de interrupção.");
 		} catch (IOException ioe) {
-			System.out.println("IO Exception occurred.");
+			System.out.println("Ocorreu uma exceção de IO.");
 		}
 	}
 

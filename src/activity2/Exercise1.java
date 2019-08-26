@@ -12,11 +12,8 @@ public class Exercise1 {
 
 	public static void main(String[] args) {
 //		for (int i = 0; i < 3; i++) new Thread(new Sleeper()).start();
-		
-		Stream
-			.generate(() -> new Thread(new Sleeper()))
-			.limit(3)
-			.forEach(thread -> thread.start());
+
+		Stream.generate(() -> new Thread(new Sleeper())).limit(3).forEach(thread -> thread.start());
 	}
 
 }

@@ -9,7 +9,7 @@ package activity2;
  */
 public class Exercise5 {
 
-	public static void main(String[] args) throws InterruptedException  {
+	public static void main(String[] args) throws InterruptedException {
 		Accountant accountant = new Accountant();
 		Thread thread = new Thread(accountant);
 		thread.start();

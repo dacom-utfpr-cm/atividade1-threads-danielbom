@@ -2,10 +2,18 @@ package activity2;
 
 import java.util.Scanner;
 
+/**
+ * Classe base para aprender threads. Está classe simplesmente pede por um
+ * número para o usuário da quantidade de termos a serem somados, e então recebe
+ * os valores do usuário também.
+ * 
+ * @author daniel
+ *
+ */
 public class Accountant implements Runnable {
 
 	private int sum;
-	
+
 	@Override
 	public void run() {
 		Scanner scanner = new Scanner(System.in);
